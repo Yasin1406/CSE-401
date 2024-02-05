@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-#search_dir="/home/iit/CSE-301"
-search_dir=$1
+search_dir="/home/yasin/CSE-301"
+#search_dir=$1
 files=$(find "$search_dir" -type f -name "*.cpp" -o -name "*.c")
 printf "%-40s %-10s %-10s\n\n" "File Name"	"File Size" "Lines of Code"
 for entry in $files; do
