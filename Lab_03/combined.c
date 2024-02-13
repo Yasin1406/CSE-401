@@ -6,7 +6,7 @@ void runit();
 
 int main(){
     int pid;
-    switch (pid = fork()) {
+    switch (pid=fork()) {
         case 0:
             runit();
             break;
