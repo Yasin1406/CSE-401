@@ -4,7 +4,7 @@
 
 void runit();
 
-int main() {
+int main(){
     int pid;
     switch (pid = fork()) {
         case 0:
@@ -21,7 +21,7 @@ int main() {
     exit(0);
 }
 
-void runit() {
+void runit(){
     printf("About to run ls\n");
     execlp("ls", "ls", "-aF", "/", (char*)0);
     perror("execlp");
