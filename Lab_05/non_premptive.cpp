@@ -53,5 +53,5 @@ int main(){
     cout<<"Average waiting time: "<<(double)wait/process_num<<endl;
 }
 bool compareProcess(Process a,Process b){
-    return a.burst_time<b.burst_time;
+    return a.priority>b.priority;
 }
